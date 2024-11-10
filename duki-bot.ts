@@ -28,8 +28,8 @@ import puppeteer from "puppeteer";
 
   await browser.close();
 
-  if (enabledCount < 10) {
-    console.error("Enabled 'Comprar' links are less than 10. Failing the job.");
+  if (enabledCount < 4) {
+    console.error("Enabled 'Comprar' links are less than 4. Failing the job.");
     process.exit(1);
   }
 })();
